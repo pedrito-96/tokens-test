@@ -6,7 +6,7 @@
       "buildPath": "assets/css/",
       "files": [
         {
-          "destination": "main.css",
+          "destination": "theme.css",
           "format": "myCustomFormat"
         }
       ]

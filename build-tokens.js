@@ -9,7 +9,6 @@ StyleDictionary.registerFormat({
     const header = await fileHeader({ file });
     return (
       header +
-      "@import 'tailwindcss'; \n" +
       "@theme {\n" +
       formattedVariables({
         format: propertyFormatNames.css,
