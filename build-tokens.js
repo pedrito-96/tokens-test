@@ -19,7 +19,8 @@ StyleDictionary.registerFormat({
     );
   },
 });
-const sd = new StyleDictionary("config.json");
+
+const sd = new StyleDictionary("config.js");
 await sd.buildAllPlatforms();
 
 const myStyleDictionary = new StyleDictionary({
