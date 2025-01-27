@@ -6,7 +6,10 @@ StyleDictionary.registerFormat({
   name: "myCustomFormat",
   format: async ({ dictionary, file, options }) => {
     const { outputReferences } = options;
-    const header = await fileHeader({ file });
+    const header = await fileHeader({
+      file,
+      formatting: { fileHeaderTimestamp: true },
+    });
     return (
       header +
       "@theme {\n" +
