@@ -1,7 +1,7 @@
 import { transformGroups } from "style-dictionary/enums";
 
 export default {
-  source: ["tokens/design-tokens.tokens.json"],
+  source: ["tokens/**/*.json"],
   platforms: {
     css: {
       transformGroup: transformGroups.css,

@@ -13,6 +13,7 @@ StyleDictionary.registerFormat({
     return (
       header +
       "@theme {\n" +
+      "  --color-avocado-300: oklch(0.94 0.11 115.03);\n" +
       formattedVariables({
         format: propertyFormatNames.css,
         dictionary,
