@@ -1,2 +1,161 @@
 @import "tailwindcss";
 @import "./theme.css";
+
+@theme inline {
+  /* Breakpoints */
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1920px;
+
+  /* PRIMITIVES */
+  /* Colors: --primitive-color- */
+  --color-primary-black: #000000;
+  --color-primary-white: #ffffff;
+  --color-primary-brown: #9d5a37;
+
+  --color-secondary-petrol: #024f45;
+  --color-secondary-off-white: #eeeeee;
+  --color-secondary-blood: #9a0a0c;
+
+  --color-neutral-0: #ffffff;
+  --color-neutral-5: #f7f7fc;
+  --color-neutral-10: #f2f2f2;
+  --color-neutral-20: #d9d9d9;
+  --color-neutral-30: #b9b9b9;
+  --color-neutral-40: #999999;
+  --color-neutral-50: #4b4b4b;
+  --color-neutral-60: #343434;
+  --color-neutral-80: #1e1e1e;
+  --color-neutral-100: #000000;
+
+  --color-status-default: #e1e2e6;
+  --color-status-success: #38d17e;
+  --color-status-danger: #ff3a3a;
+  --color-status-warning: #fabb05;
+  --color-status-info: #2f6eb4;
+
+  --color-black-opacity-20: rgba(0, 0, 0, 0.2);
+  --color-black-opacity-30: rgba(0, 0, 0, 0.3);
+  --color-black-opacity-40: rgba(0, 0, 0, 0.4);
+  --color-black-opacity-60: rgba(0, 0, 0, 0.6);
+  --color-black-opacity-80: rgba(0, 0, 0, 0.8);
+  --color-white-opacity-0: rgba(255, 255, 255, 0);
+  --color-white-opacity-20: rgba(255, 255, 255, 0.2);
+  --color-white-opacity-30: rgba(255, 255, 255, 0.3);
+  --color-white-opacity-40: rgba(255, 255, 255, 0.4);
+  --color-white-opacity-60: rgba(255, 255, 255, 0.6);
+  --color-white-opacity-80: rgba(255, 255, 255, 0.8);
+
+  /* Typography: --primitive-typography- */
+  /* Font:  --primitive-typography-font-family-helvetica: */
+  --font-helvetica: Helvetica;
+  --font-lato: Lato;
+  --font-times-new-roman: Times New Roman;
+  --font-courier: Courier;
+
+  /* Font Size: --primitive-typography-font-size- */
+  --text-100: 12px;
+  --text-200: 14px;
+  --text-300: 16px;
+  --text-400: 18px;
+  --text-500: 20px;
+  --text-600: 24px;
+  --text-700: 28px;
+  --text-800: 40px;
+  --text-900: 56px;
+  --text-1000: 72px;
+  --text-1100: 120px;
+
+  /* Line Height: --primitive-typography-line-height- */
+  --leading-100: 14px;
+  --leading-200: 17px;
+  --leading-300: 19px;
+  --leading-400: 22px;
+  --leading-500: 24px;
+  --leading-600: 29px;
+  --leading-700: 34px;
+  --leading-800: 48px;
+  --leading-900: 67px;
+  --leading-1000: 86px;
+  --leading-1100: 144px;
+
+  /* Font Weight: --primitive-typography-font-weight- */
+  --font-weight-100: Light;
+  --font-weight-200: Regular;
+  --font-weight-300: Semibold;
+
+  /* Spacing: --primitive-units- */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-84: 84px;
+  --spacing-96: 96px;
+  --spacing-120: 120px;
+
+  /* Radius: --primitive-radius- */
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-28: 28px;
+  --radius-32: 32px;
+  --radius-40: 40px;
+  --radius-80: 80px;
+
+  /* Stroke: --primitive-stroke-width- */
+  /* Does not work for both, SVG stroke and border-width. */
+  /* styling the stroke width of SVG elements. */
+  --stroke-width-50: 0.5px;
+  --stroke-width-100: 1px;
+  --stroke-width-200: 2px;
+  /* border width */
+  --border-width-50: 0.5px;
+  --border-width-100: 1px;
+  --border-width-200: 2px;
+
+  /* Blur: --primitive-blur- */
+  --blur-xs: 4px;
+  --blur-sm: 8px;
+  --blur-md: 12px;
+  --blur-lg: 16px;
+  --blur-xl: 32px;
+
+  --color-breakpoint: var(--breakpoint-color);
+  --text-body-md: var(--font-size-body-md);
+}
+
+:root {
+  --breakpoint-color: pink;
+  --font-size-body-md: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --breakpoint-color: green;
+    --font-size-body-md: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  :root {
+    --breakpoint-color: blue;
+    --font-size-body-md: 68px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  :root {
+    --breakpoint-color: orange;
+    --font-size-body-md: 88px;
+  }
+}

@@ -10,10 +10,15 @@
     </p>
 
     <p
-      class="border-2 border-status-success rounded-80 text-status-warning bg-status-danger w-fit p-3"
+      class="border-2 border-status-success rounded-80 text-status-warning bg-status-danger w-fit p-3 text-body-md ciao"
     >
       TEST
     </p>
     <div class="p-10 w-10 rounded-20 blur-xs bg-status-info"></div>
+    <div class="bg-breakpoint">
+      <p class="sm:block md:hidden">--breakpoint-sm: 300px;</p>
+      <p class="md:block lg:hidden">--breakpoint-md: 400px;</p>
+      <p class="lg:block">--breakpoint-lg: 600px;</p>
+    </div>
   </div>
 </template>
