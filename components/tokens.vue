@@ -19,6 +19,8 @@
       <p class="sm:block md:hidden">--breakpoint-sm: 300px;</p>
       <p class="md:block lg:hidden">--breakpoint-md: 400px;</p>
       <p class="lg:block">--breakpoint-lg: 600px;</p>
+
+      <h1 class="p-120 bg-amber-100 border-200 border-rosso">SPACING</h1>
     </div>
   </div>
 </template>
